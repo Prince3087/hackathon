@@ -1,0 +1,27 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Page</title>
+<link rel="stylesheet" href="{% static 'css/styles.css'%}">
+<style>
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="signup-box">
+    <h2>Username</h2>
+    <input type="text" placeholder="Enter Username">
+    <h2>Password</h2>
+    <input type="password" placeholder="Enter Password">
+    <h2>Confirm Password</h2>
+    <input type="password" placeholder="Confirm Password">
+    <button><a href="{% url 'login' %}">Sign Up</a></button>
+  </div>
+</div>
+</body>
+</html>
